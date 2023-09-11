@@ -1,0 +1,31 @@
+<div class="container py-5">
+    <div class="row">
+        <div class="text-center text-white">
+            <h2 class="fw-bold text-black">CONATCT SECTION</h2>
+            <div class="d-flex justify-content-center align-items-center py-3">
+                <div class="line bg-black"></div>
+                <i class="fa-solid fa-star text-black fs-5"></i>
+                <div class="line bg-black"></div>
+            </div>
+            <form class="d-flex flex-column gap-3">
+                <div class="w-50 d-flex flex-column m-auto">
+                    <label [class.showLabel]="showN" for="name" class="text-start" >userName</label>
+                    <input (keyup)="show($event)" id="name" class="form-control pt-0 border-top-0" type="text" placeholder="userName">
+                </div>
+                <div class="w-50 d-flex flex-column m-auto">
+                    <label [class.showLabel]="showA" for="age" class="text-start" >userAge</label>
+                    <input (keyup)="show($event)" id="age" class="form-control pt-0 border-top-0 " type="text" placeholder="userAge">
+                </div>
+                <div class="w-50 d-flex flex-column m-auto">
+                    <label [class.showLabel]="showE" for="email" class="text-start" >userEmail</label>
+                    <input (keyup)="show($event)" id="email" class="form-control pt-0 border-top-0 " type="text" placeholder="userEmail">
+                </div>
+                <div class="w-50 d-flex flex-column m-auto">
+                    <label [class.showLabel]="showP" for="password" class="text-start" >userPassword</label>
+                    <input (keyup)="show($event)" id="password" class="form-control pt-0 border-top-0 " type="text" placeholder="userPassword">
+                </div>
+            </form>
+            <button class="btn mt-3 btn-success">Send Message</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+.layer {
+    background: #1abc9ccf;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.col-md-4:hover .layer{
+    opacity: 1;
+}
+
+.card {
+    cursor: pointer;
+}
+
+.imgShow {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(7, 29, 67, 0.633);
+}

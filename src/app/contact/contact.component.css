@@ -1,0 +1,16 @@
+.form-control {
+    border: none !important;
+    border-bottom: #dee2e6 1px solid !important;
+}
+
+form > div > label {
+    position: relative;
+    top: 30px ;
+    color: rgb(80, 221, 174);
+    transition: all 0.5s;
+    z-index: -1;
+}
+
+.showLabel {
+    top: -10px !important;
+}
